@@ -63,7 +63,7 @@ const HistoryModal: React.FC<HistoryModalProps> = ({ isOpen, onClose }) => {
                     </div>
                     <div className="w-32 h-32 rounded-full bg-slate-700 mb-8 border-4 border-slate-600 group-hover:border-science-purple transition-colors overflow-hidden flex items-center justify-center shadow-xl">
                         <img 
-                          src="https://ccsb.scripps.edu/wp-content/uploads/2019/03/Olson_Arthur_2019-400x500.jpg"
+                          src="assets/art.jpg"
                           alt="Art Olson"
                           className="w-full h-full object-cover"
                           onError={(e) => {
@@ -94,7 +94,7 @@ const HistoryModal: React.FC<HistoryModalProps> = ({ isOpen, onClose }) => {
                     </div>
                     <div className="w-32 h-32 rounded-full bg-slate-700 mb-8 border-4 border-slate-600 group-hover:border-science-teal transition-colors overflow-hidden flex items-center justify-center shadow-xl">
                         <img 
-                          src="https://ccsb.scripps.edu/goodsell/wp-content/uploads/sites/11/2019/01/Goodsell_2019-300x300.jpg"
+                          src="assets/david.jpg"
                           alt="David Goodsell"
                           className="w-full h-full object-cover"
                           onError={(e) => {
