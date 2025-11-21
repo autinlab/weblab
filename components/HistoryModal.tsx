@@ -62,7 +62,19 @@ const HistoryModal: React.FC<HistoryModalProps> = ({ isOpen, onClose }) => {
                         The Founder
                     </div>
                     <div className="w-32 h-32 rounded-full bg-slate-700 mb-8 border-4 border-slate-600 group-hover:border-science-purple transition-colors overflow-hidden flex items-center justify-center shadow-xl">
-                        <span className="text-3xl font-bold text-slate-500 group-hover:text-white transition-colors">AO</span>
+                        <img 
+                          src="https://ccsb.scripps.edu/wp-content/uploads/2019/03/Olson_Arthur_2019-400x500.jpg"
+                          alt="Art Olson"
+                          className="w-full h-full object-cover"
+                          onError={(e) => {
+                            const target = e.currentTarget;
+                            const parent = target.parentElement;
+                            target.style.display = 'none';
+                            if (parent) {
+                              parent.innerHTML = '<span class="text-3xl font-bold text-slate-500 group-hover:text-white transition-colors">AO</span>';
+                            }
+                          }}
+                        />
                     </div>
                     <h3 className="text-3xl font-display font-bold text-white mb-4 group-hover:text-science-purple transition-colors">Art Olson</h3>
                     <p className="text-slate-300 text-base leading-relaxed">
@@ -81,7 +93,19 @@ const HistoryModal: React.FC<HistoryModalProps> = ({ isOpen, onClose }) => {
                         The Visionary
                     </div>
                     <div className="w-32 h-32 rounded-full bg-slate-700 mb-8 border-4 border-slate-600 group-hover:border-science-teal transition-colors overflow-hidden flex items-center justify-center shadow-xl">
-                        <span className="text-3xl font-bold text-slate-500 group-hover:text-white transition-colors">DG</span>
+                        <img 
+                          src="https://ccsb.scripps.edu/goodsell/wp-content/uploads/sites/11/2019/01/Goodsell_2019-300x300.jpg"
+                          alt="David Goodsell"
+                          className="w-full h-full object-cover"
+                          onError={(e) => {
+                            const target = e.currentTarget;
+                            const parent = target.parentElement;
+                            target.style.display = 'none';
+                            if (parent) {
+                              parent.innerHTML = '<span class="text-3xl font-bold text-slate-500 group-hover:text-white transition-colors">DG</span>';
+                            }
+                          }}
+                        />
                     </div>
                     <h3 className="text-3xl font-display font-bold text-white mb-4 group-hover:text-science-teal transition-colors">David Goodsell</h3>
                     <p className="text-slate-300 text-base leading-relaxed">

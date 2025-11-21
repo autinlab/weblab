@@ -52,10 +52,10 @@ const Hero: React.FC = () => {
           </h1>
 
           {/* Logos + Text */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 mb-14 max-w-4xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 mb-14 max-w-5xl mx-auto">
             {/* Left: Ludo's MGL Logo */}
             <div className="flex-shrink-0">
-              <div className="w-28 h-28 md:w-32 md:h-32 rounded-3xl p-[2px] bg-gradient-to-br from-science-teal/60 to-science-purple/60 shadow-[0_0_40px_rgba(56,189,248,0.25)]">
+              <div className="w-56 h-56 md:w-64 md:h-64 rounded-3xl p-[2px] bg-gradient-to-br from-science-teal/60 to-science-purple/60 shadow-[0_0_40px_rgba(56,189,248,0.25)]">
                 <div className="w-full h-full rounded-3xl bg-slate-950/80 border border-cyan-500/30 flex items-center justify-center backdrop-blur-md transition-transform duration-500 hover:scale-105 overflow-hidden">
                   <img 
                     src="assets/Logo1.gif" 
@@ -67,7 +67,7 @@ const Hero: React.FC = () => {
                         target.style.display = 'none';
                         if (parent) {
                             parent.innerText = 'MGL';
-                            parent.classList.add('text-science-teal', 'font-display', 'font-bold', 'text-3xl');
+                            parent.classList.add('text-science-teal', 'font-display', 'font-bold', 'text-6xl');
                         }
                     }}
                   />

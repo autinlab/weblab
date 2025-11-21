@@ -12,21 +12,20 @@ const Footer: React.FC = () => {
               {AFFILIATIONS.map((affil) => (
                   <a key={affil.id} href={affil.url} target="_blank" rel="noreferrer" className="flex items-center gap-5 group transition-transform hover:-translate-y-1 duration-300">
                      {affil.logo && (
-                        <div className="bg-white p-3 rounded-xl shadow-lg group-hover:shadow-science-teal/20 transition-shadow">
-                          <img 
-                             src={affil.logo} 
-                             alt={affil.name} 
-                             className="h-12 w-auto object-contain"
-                             onError={(e) => {
+                        <img 
+                            src={affil.logo} 
+                            alt={affil.name} 
+                            className="h-16 w-auto object-contain brightness-0 invert opacity-70 group-hover:opacity-100 transition-all"
+                            onError={(e) => {
                                 const target = e.currentTarget;
                                 const parent = target.parentElement;
                                 target.style.display = 'none';
-                                if (parent) {
+                                // Safely access parent style if parent exists
+                                if (parent && parent.style) {
                                     parent.style.display = 'none';
                                 }
-                             }}
-                          />
-                        </div>
+                            }}
+                        />
                      )}
                      <div className="text-left">
                         <div className="text-slate-100 font-display font-bold text-xl mb-1 group-hover:text-science-teal transition-colors">{affil.name}</div>
